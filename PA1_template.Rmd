@@ -110,6 +110,7 @@ imputeMV <- function(ori_data, imp_data) {
 }
 
 mydata2 <- imputeMV(mydata, impdata)
+sum(is.na(mydata2$steps))
 ```
 
   The histogram of the total number of steps taken each day after missing values are imputed is as below
